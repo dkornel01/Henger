@@ -1,10 +1,12 @@
 
 package hengerek;
 
+import java.util.ArrayList;
+
 
 public class Hengerek {
 
-
+    private ArrayList<Henger> hengerek;
     public static void main(String[] args) {
         run();
     }

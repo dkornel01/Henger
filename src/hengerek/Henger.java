@@ -2,7 +2,7 @@
 package hengerek;
 
 
-public class Henger {
+public class Henger extends Hengerek{
     static int HengerDarab;
     private double sugar,magassag;
 
