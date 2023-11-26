@@ -23,8 +23,8 @@ public class Henger extends Hengerek{
         return magassag;
     }
     public double terfogat(){
-        
-        return 0;
+        double megoldas=sugar*sugar*3.14*magassag;
+        return megoldas;
     }
 
     @Override

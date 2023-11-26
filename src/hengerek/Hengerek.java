@@ -1,37 +1,51 @@
 
 package hengerek;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
 public class Hengerek {
 
-    private ArrayList<Henger> hengerek;
+    static private ArrayList<Henger> hengerek;
     public static void main(String[] args) {
+        HengerProgram();
+    }
+
+    static private  void HengerProgram() {
         run();
     }
 
-    private static void HengerProgram() {
-        
-    }
-
-    private static void run() {
+    static private  void run() {
         HengerProgram();
         csovekSulya();
         atlagterfogat();
         lista();
     }
 
-    public static void csovekSulya() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    static public  void csovekSulya() {
+        double atlag=0;
+            for (int i=0;i<hengerek.size();i++){
+                TomorHenger egy = (TomorHenger) hengerek.get(i);
+                atlag+=egy.suly();
+            }
+            System.out.println("");
     }
 
-    public static void atlagterfogat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    static public  void atlagterfogat() {
+        double atlag=0;
+            for (int i=0;i<hengerek.size();i++){
+                Henger egy = hengerek.get(i);
+                atlag+=egy.terfogat();
+            }
+            atlag=atlag/6;
     }
 
-    private static void lista() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    static private  void lista() {
+        for (int i=0;i<hengerek.size();i++){
+                Henger egy = hengerek.get(i);
+                System.out.println(egy.toString());
+            }
     }
     
 }

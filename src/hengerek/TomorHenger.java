@@ -1,6 +1,8 @@
 
 package hengerek;
 
+import java.awt.Color;
+
 
 public class TomorHenger extends Henger{
     private double fajsuly;
@@ -12,14 +14,20 @@ public class TomorHenger extends Henger{
         super(sugar, magassag);
         this.fajsuly = fajsuly;
     }
-    private double suly(){
-        return 0;
-    }
     
     public double getFajsuly() {
         return fajsuly;
     }
 
+    @Override
+    public double terfogat() {
+        return super.terfogat(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+    public double suly(){
+        double egy=fajsuly/(getMagassag()*getMagassag()*getMagassag());
+        return egy;
+    }
+    
     @Override
     public String toString() {
         return "TomorHenger{" + "sugar=" + getSugar()+ ", magassag=" + getMagassag() +  "fajsuly=" + fajsuly + '}';

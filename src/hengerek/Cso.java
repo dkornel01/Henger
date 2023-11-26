@@ -12,10 +12,16 @@ public class Cso extends TomorHenger{
         this.falvastagsag = falvastagsag;
     }
 
+    @Override
+    public double terfogat() {
+        return super.terfogat(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+    
     public double getFalvastagsag() {
         return falvastagsag;
     }
-
+    
+    
     @Override
     public String toString() {
         return "Cso{" + "falvastagsag=" + falvastagsag  + "sugar=" + getSugar()+ ", magassag=" + getMagassag() +  "fajsuly=" + getFajsuly() +'}';
