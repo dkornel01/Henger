@@ -21,10 +21,10 @@ public class TomorHenger extends Henger{
 
     @Override
     public double terfogat() {
-        return super.terfogat(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        return super.terfogat(); 
     }
     public double suly(){
-        double egy=fajsuly/(getMagassag()*getMagassag()*getMagassag());
+        double egy=fajsuly*terfogat();
         return egy;
     }
     

@@ -23,22 +23,23 @@ public class Hengerek {
         lista();
     }
 
-    static public  void csovekSulya() {
+    static public  double csovekSulya() {
         double atlag=0;
             for (int i=0;i<hengerek.size();i++){
                 TomorHenger egy = (TomorHenger) hengerek.get(i);
                 atlag+=egy.suly();
             }
-            System.out.println("");
+            return atlag;
     }
 
-    static public  void atlagterfogat() {
+    static public  double atlagterfogat() {
         double atlag=0;
             for (int i=0;i<hengerek.size();i++){
                 Henger egy = hengerek.get(i);
                 atlag+=egy.terfogat();
             }
             atlag=atlag/6;
+            return atlag;
     }
 
     static private  void lista() {

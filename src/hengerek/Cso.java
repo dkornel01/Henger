@@ -1,7 +1,6 @@
 
 package hengerek;
 
-
 public class Cso extends TomorHenger{
     double falvastagsag;
     public Cso(double fajsuly, double sugar, double magassag) {
@@ -12,15 +11,20 @@ public class Cso extends TomorHenger{
         this.falvastagsag = falvastagsag;
     }
 
-    @Override
-    public double terfogat() {
-        return super.terfogat(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    public double terfogat(){
+        double megoldas=(getSugar()-falvastagsag)*(getSugar()-falvastagsag)*3.14*getMagassag();
+        return megoldas;
     }
     
     public double getFalvastagsag() {
         return falvastagsag;
     }
-    
+
+    @Override
+    public double suly() {
+        return super.suly(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+    }
+
     
     @Override
     public String toString() {
