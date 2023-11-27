@@ -12,7 +12,7 @@ public class Cso extends TomorHenger{
     }
 
     public double terfogat(){
-        double megoldas=(getSugar()-falvastagsag)*(getSugar()-falvastagsag)*3.14*getMagassag();
+        double megoldas=(getSugar()-falvastagsag)*(getSugar()-falvastagsag)*Math.PI*getMagassag();
         return megoldas;
     }
     

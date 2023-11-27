@@ -24,7 +24,7 @@ public class Henger extends Hengerek{
         return magassag;
     }
     public double terfogat(){
-        double megoldas=sugar*sugar*3.14*magassag;
+        double megoldas=sugar*sugar*Math.PI*magassag;
         return megoldas;
     }
 
