@@ -18,8 +18,12 @@ public class Hengerek {
 
     static private  void run() {
         hengerek=lista();
-        csovekSulya();
-        atlagterfogat();
+        System.out.println(csovekSulya());
+        System.out.println(atlagterfogat());
+            for (int i=0;i<hengerek.size();i++){
+                Henger egy = hengerek.get(i);
+                System.out.println(egy.toString());
+            }
     }
 
     static public  double csovekSulya() {
@@ -42,6 +46,7 @@ public class Hengerek {
             atlag=atlag/6;
             return atlag;
     }
+    
 
     static private  ArrayList<Henger> lista() {
         hengerek.add(0,new Henger(3,4));
