@@ -26,7 +26,7 @@ public class Hengerek {
     static public  double csovekSulya() {
         double atlag=0;
             for (int i=0;i<hengerek.size();i++){
-                TomorHenger egy = (TomorHenger) hengerek.get(i);
+                Cso egy = (Cso) hengerek.get(i);
                 atlag+=egy.suly();
             }
             return atlag;
