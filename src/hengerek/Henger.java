@@ -9,6 +9,7 @@ public class Henger extends Hengerek{
     public Henger(double sugar, double magassag) {
         this.sugar = sugar;
         this.magassag = magassag;
+        HengerDarab+=1;
     }
 
     public static int getHengerDarab() {
